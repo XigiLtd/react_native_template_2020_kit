@@ -12,17 +12,17 @@ export interface HeadingStyleProp {
   marginTop?: number;
 }
 
+export interface IHeadingProps {
+  type: HeadTypes;
+  text?: string;
+  style?: StyleProp<HeadingStyleProp>;
+}
+
 export enum HeadTypes {
   h1 = 'h1',
   h2 = 'h2',
   h3 = 'h3',
   h4 = 'h4',
-}
-
-export interface IHeadingProps {
-  type: HeadTypes;
-  text?: string;
-  style?: StyleProp<HeadingStyleProp>;
 }
 
 export class Heading extends React.Component<IHeadingProps> {

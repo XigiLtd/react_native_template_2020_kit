@@ -10,7 +10,7 @@ import fonts from '../styles/fonts';
 import Text, { TextStyleProp } from '../text';
 
 export interface ButtonStyleProp {
-  backgroundColor: string;
+  backgroundColor?: string;
 }
 
 export interface IButtonProps {
@@ -19,7 +19,7 @@ export interface IButtonProps {
   disabled?: boolean;
   inverse?: boolean;
   buttonStyle?: StyleProp<ButtonStyleProp>;
-  textStyle: StyleProp<TextStyleProp>;
+  textStyle?: StyleProp<TextStyleProp>;
 }
 
 export class Button extends React.Component<IButtonProps> {
