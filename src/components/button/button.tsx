@@ -7,11 +7,9 @@ import {
 } from 'react-native';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
-import Text, { TextStyleProp } from '../text';
-
-export interface ButtonStyleProp {
-  backgroundColor?: string;
-}
+import Text from '../text';
+import type TextStyleProp from '../text/dto/textStyleProp';
+import type { ButtonStyleProp } from './dto/buttonSytelProp';
 
 export interface IButtonProps {
   onClick: () => void;

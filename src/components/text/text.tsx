@@ -6,13 +6,8 @@ import {
   StyleProp,
 } from 'react-native';
 import colors from '../styles/colors';
-import fonts, { fontTypes } from '../styles/fonts';
-
-export interface TextStyleProp {
-  color?: string;
-  fontSize?: number;
-  fontFamily?: fontTypes;
-}
+import fonts from '../styles/fonts';
+import type TextStyleProp from './dto/textStyleProp';
 
 export interface ITextProps {
   style?: StyleProp<TextStyleProp>;

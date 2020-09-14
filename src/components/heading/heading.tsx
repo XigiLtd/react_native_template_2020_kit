@@ -2,27 +2,13 @@ import * as React from 'react';
 import { StyleProp, StyleSheet, Text } from 'react-native';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
-
-export interface HeadingStyleProp {
-  fontSize?: number;
-  lineHeight?: number;
-  alignSelf?: string;
-  color?: string;
-  marginBottom?: number;
-  marginTop?: number;
-}
+import type { HeadingStyleProp } from './dto/headingStyleProp';
+import type { HeadTypes } from './dto/headTypes';
 
 export interface IHeadingProps {
   type: HeadTypes;
   text?: string;
   style?: StyleProp<HeadingStyleProp>;
-}
-
-export enum HeadTypes {
-  h1 = 'h1',
-  h2 = 'h2',
-  h3 = 'h3',
-  h4 = 'h4',
 }
 
 export class Heading extends React.Component<IHeadingProps> {

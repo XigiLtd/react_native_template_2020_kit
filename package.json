@@ -1,6 +1,6 @@
 {
   "name": "@xigiltd/erpkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "components for erp",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
