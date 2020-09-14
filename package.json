@@ -1,5 +1,5 @@
 {
-  "name": "@xigi/erpkit",
+  "name": "@xigiltd/erpkit",
   "version": "0.0.1",
   "description": "components for erp",
   "main": "lib/commonjs/index",
